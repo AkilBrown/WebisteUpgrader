@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Primary SEO -->
+  <title>Magic City Chiropractic | Expert Care by Dr. Scott Albano – Hoover & Birmingham, AL</title>
+  <meta name="description" content="Experience tailored chiropractic care from Dr. Scott C. Albano, board-certified chiropractic orthopedist and 2004 Arnold Classic World Champion Powerlifter. Holistic treatment, sports chiropractic, pregnancy care, pediatric care & injury recovery in Hoover, Alabama." />
+  <meta name="keywords" content="chiropractor Hoover AL, chiropractor Birmingham AL, Dr Scott Albano, sports chiropractic Hoover, pregnancy chiropractic Birmingham, pediatric chiropractor Alabama, Magic City Chiropractic, best chiropractor Hoover" />
+  <meta name="author" content="Magic City Chiropractic" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="canonical" href="https://magiccitychiro.com/" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Magic City Chiropractic" />
+  <meta property="og:title" content="Magic City Chiropractic | Expert Care by Dr. Scott Albano" />
+  <meta property="og:description" content="World Champion Powerlifter & Board-Certified Chiropractic Orthopedist delivering personalized, holistic care in Hoover & Birmingham, AL." />
+  <meta property="og:url" content="https://magiccitychiro.com/" />
+  <meta property="og:image" content="https://magiccitychiro.com/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Magic City Chiropractic | Dr. Scott Albano – Hoover, AL" />
+  <meta name="twitter:description" content="Tailored chiropractic care from a world champion powerlifter. Sports, pregnancy, pediatric & injury recovery in Hoover & Birmingham, Alabama." />
+  <meta name="twitter:image" content="https://magiccitychiro.com/og-image.jpg" />
+
+  <!-- Additional SEO / Performance -->
+  <meta name="theme-color" content="#c41e3a" />
+  <meta name="geo.region" content="US-AL" />
+  <meta name="geo.placename" content="Hoover" />
+  <meta name="geo.position" content="33.405;-86.811" />
+  <meta name="ICBM" content="33.405, -86.811" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --black: #0a0a0a;
+      --black-soft: #1a1a1a;
+      --red: #c41e3a;
+      --red-dark: #9f1830;
+      --red-light: #e63950;
+      --white: #ffffff;
+      --off-white: #f7f7f7;
+      --gray: #555555;
+      --gray-light: #e5e5e5;
+      --text: #1a1a1a;
+      --radius: 12px;
+      --shadow: 0 10px 30px -8px rgba(0, 0, 0, 0.12);
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', system-ui, sans-serif;
+      color: var(--text);
+      line-height: 1.6;
+      background: var(--white);
+      overflow-x: hidden;
+    }
+
+    /* ========== NAV ========== */
+    .nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 1000;
+      background: rgba(10, 10, 10, 0.96);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      transition: var(--transition);
+    }
+    .nav-inner {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0.9rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: white;
+      text-decoration: none;
+      letter-spacing: -0.02em;
+    }
+    .logo span { color: var(--red); }
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+    .nav-links a {
+      color: rgba(255,255,255,0.88);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--red-light); }
+    .nav-cta {
+      background: var(--red);
+      color: white !important;
+      padding: 0.55rem 1.25rem;
+      border-radius: 999px;
+      font-weight: 600;
+    }
+    .nav-cta:hover { background: var(--red-dark); }
+    .mobile-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    /* ========== HERO ========== */
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 60%, #2a0a0f 100%);
+      color: white;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      padding: 7rem 1.5rem 5rem;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 75% 25%, rgba(196, 30, 58, 0.18) 0%, transparent 55%);
+    }
+    .hero-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(196, 30, 58, 0.18);
+      border: 1px solid rgba(196, 30, 58, 0.4);
+      color: #ff6b81;
+      padding: 0.4rem 1rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 1.5rem;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.4rem, 5vw, 3.6rem);
+      line-height: 1.15;
+      margin-bottom: 1.25rem;
+      letter-spacing: -0.03em;
+    }
+    .hero h1 span { color: var(--red-light); }
+    .hero-lead {
+      font-size: 1.2rem;
+      color: rgba(255,255,255,0.85);
+      max-width: 520px;
+      margin-bottom: 2.25rem;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+    }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.9rem 1.75rem;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 1rem;
+      text-decoration: none;
+      transition: var(--transition);
+      border: none;
+      cursor: pointer;
+    }
+    .btn-primary {
+      background: var(--red);
+      color: white;
+    }
+    .btn-primary:hover {
+      background: var(--red-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px -5px rgba(196, 30, 58, 0.45);
+    }
+    .btn-secondary {
+      background: transparent;
+      color: white;
+      border: 2px solid rgba(255,255,255,0.3);
+    }
+    .btn-secondary:hover {
+      border-color: white;
+      background: rgba(255,255,255,0.06);
+    }
+    .hero-stats {
+      display: flex;
+      gap: 2.5rem;
+      flex-wrap: wrap;
+    }
+    .stat strong {
+      display: block;
+      font-size: 1.6rem;
+      font-weight: 800;
+      color: var(--red-light);
+    }
+    .stat span {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.7);
+    }
+
+    .hero-visual {
+      position: relative;
+    }
+    .hero-card {
+      background: rgba(255,255,255,0.06);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 20px;
+      padding: 2rem;
+      text-align: center;
+    }
+    .hero-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+    }
+    .hero-card p {
+      color: rgba(255,255,255,0.75);
+      font-size: 0.95rem;
+    }
+    .champion-badge {
+      margin-top: 1.5rem;
+      display: inline-block;
+      background: var(--red);
+      color: white;
+      font-weight: 700;
+      padding: 0.5rem 1.25rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      letter-spacing: 0.03em;
+    }
+
+    /* ========== SECTIONS ========== */
+    section {
+      padding: 5.5rem 1.5rem;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .section-header {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 3.5rem;
+    }
+    .section-header h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      margin-bottom: 1rem;
+      color: var(--black);
+    }
+    .section-header p {
+      color: var(--gray);
+      font-size: 1.1rem;
+    }
+
+    /* Services */
+    .services {
+      background: var(--off-white);
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.75rem;
+    }
+    .service-card {
+      background: white;
+      border-radius: var(--radius);
+      padding: 2rem;
+      box-shadow: var(--shadow);
+      transition: var(--transition);
+      border: 1px solid transparent;
+      position: relative;
+      overflow: hidden;
+    }
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 4px;
+      background: var(--red);
+      transform: scaleX(0);
+      transition: transform 0.4s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(196, 30, 58, 0.2);
+    }
+    .service-card:hover::before { transform: scaleX(1); }
+    .service-icon {
+      width: 52px; height: 52px;
+      background: rgba(196, 30, 58, 0.1);
+      color: var(--red);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+    .service-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+      color: var(--black);
+    }
+    .service-card p {
+      color: var(--gray);
+      font-size: 0.95rem;
+    }
+
+    /* About */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: center;
+    }
+    .about-content h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.4rem;
+      margin-bottom: 1.25rem;
+      color: var(--black);
+    }
+    .about-content p {
+      color: var(--gray);
+      margin-bottom: 1.25rem;
+      font-size: 1.05rem;
+    }
+    .about-highlights {
+      display: grid;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .highlight {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+    .highlight-icon {
+      width: 40px; height: 40px;
+      background: rgba(196, 30, 58, 0.12);
+      color: var(--red);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-weight: 700;
+    }
+    .about-image {
+      background: var(--black);
+      border-radius: 20px;
+      min-height: 420px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+    .about-image::after {
+      content: '#MAGICCITYSTRONG';
+      position: absolute;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      font-weight: 800;
+      font-size: 1.1rem;
+      letter-spacing: 0.05em;
+      color: var(--red-light);
+      opacity: 0.95;
+    }
+
+    /* Testimonial */
+    .testimonial {
+      background: var(--black);
+      color: white;
+      text-align: center;
+    }
+    .testimonial blockquote {
+      font-size: 1.35rem;
+      max-width: 800px;
+      margin: 0 auto 1.5rem;
+      line-height: 1.7;
+      font-style: italic;
+      position: relative;
+    }
+    .testimonial cite {
+      font-style: normal;
+      font-weight: 600;
+      color: var(--red-light);
+    }
+
+    /* Contact / CTA */
+    .contact {
+      background: var(--off-white);
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+    }
+    .contact-info h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      color: var(--black);
+    }
+    .contact-info p {
+      color: var(--gray);
+      margin-bottom: 2rem;
+    }
+    .contact-details {
+      display: grid;
+      gap: 1.25rem;
+    }
+    .contact-item {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+    }
+    .contact-item strong {
+      display: block;
+      color: var(--black);
+      margin-bottom: 0.15rem;
+    }
+    .contact-item a {
+      color: var(--red);
+      text-decoration: none;
+      font-weight: 500;
+    }
+    .contact-item a:hover { text-decoration: underline; }
+
+    .contact-form-card {
+      background: white;
+      padding: 2.5rem;
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      border: 1px solid var(--gray-light);
+    }
+    .contact-form-card h3 {
+      margin-bottom: 1.5rem;
+      font-size: 1.35rem;
+      color: var(--black);
+    }
+    .form-group {
+      margin-bottom: 1.25rem;
+    }
+    .form-group label {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: 0.4rem;
+      color: var(--black);
+    }
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.85rem 1rem;
+      border: 1px solid var(--gray-light);
+      border-radius: 8px;
+      font-family: inherit;
+      font-size: 1rem;
+      transition: border-color 0.2s;
+      background: white;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: var(--red);
+      box-shadow: 0 0 0 3px rgba(196, 30, 58, 0.15);
+    }
+    .form-note {
+      font-size: 0.85rem;
+      color: var(--gray);
+      margin-top: 1rem;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--black);
+      color: rgba(255,255,255,0.75);
+      padding: 3.5rem 1.5rem 2rem;
+    }
+    .footer-grid {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+    .footer-brand .logo {
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+    .footer-brand p {
+      max-width: 320px;
+      font-size: 0.95rem;
+    }
+    .footer-col h4 {
+      color: white;
+      font-size: 1rem;
+      margin-bottom: 1.25rem;
+      letter-spacing: 0.02em;
+    }
+    .footer-col ul {
+      list-style: none;
+    }
+    .footer-col li { margin-bottom: 0.6rem; }
+    .footer-col a {
+      color: rgba(255,255,255,0.7);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-col a:hover { color: var(--red-light); }
+    .footer-bottom {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.9rem;
+    }
+
+    /* Animations */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Mobile */
+    @media (max-width: 900px) {
+      .nav-links { display: none; }
+      .mobile-toggle { display: block; }
+      .hero-content { grid-template-columns: 1fr; gap: 3rem; }
+      .about-grid, .contact-grid, .footer-grid { grid-template-columns: 1fr; }
+      .hero { padding-top: 6rem; min-height: auto; }
+    }
+  </style>
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalBusiness",
+    "name": "Magic City Chiropractic",
+    "alternateName": "Magic City Chiro",
+    "image": "https://magiccitychiro.com/og-image.jpg",
+    "url": "https://magiccitychiro.com/",
+    "telephone": "+1-205-444-4844",
+    "email": "Magiccitychiro@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "1581 Montgomery Hwy, Suite 115",
+      "addressLocality": "Hoover",
+      "addressRegion": "AL",
+      "postalCode": "35216",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "33.405",
+      "longitude": "-86.811"
+    },
+    "priceRange": "$$",
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:00",
+      "closes": "19:00"
+    },
+    "description": "Expert chiropractic care by Dr. Scott C. Albano, board-certified chiropractic orthopedist and 2004 Arnold Classic World Champion Powerlifter serving Hoover and Birmingham, Alabama. Specializing in sports chiropractic, pregnancy care, pediatric care, and injury recovery.",
+    "founder": {
+      "@type": "Person",
+      "name": "Dr. Scott C. Albano, D.C.",
+      "jobTitle": "Chiropractic Orthopedist",
+      "description": "Board-certified chiropractic orthopedist and 2004 Arnold Classic World Champion Powerlifter"
+    },
+    "areaServed": ["Hoover", "Birmingham", "Alabama"],
+    "medicalSpecialty": "Chiropractic"
+  }
+  </script>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#" class="logo">Magic City <span>Chiro</span></a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Dr. Albano</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#forms">Patient Forms</a></li>
+        <li><a href="#contact" class="nav-cta">Schedule Appointment</a></li>
+      </ul>
+      <button class="mobile-toggle" aria-label="Menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-content">
+      <div>
+        <div class="hero-badge">
+          <span>★</span> World Champion Powerlifter • Board-Certified
+        </div>
+        <h1>Expert Chiropractic Care<br>from a <span>World Champion</span></h1>
+        <p class="hero-lead">
+          Dr. Scott C. Albano delivers personalized, holistic chiropractic care tailored to your unique body and goals — whether you’re an athlete, expecting mother, parent, or simply ready to move without pain.
+        </p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Schedule Appointment</a>
+          <a href="#services" class="btn btn-secondary">Explore Services</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <strong>15+</strong>
+            <span>Years Experience</span>
+          </div>
+          <div class="stat">
+            <strong>2004</strong>
+            <span>Arnold Classic Champion</span>
+          </div>
+          <div class="stat">
+            <strong>Hoover</strong>
+            <span>& Birmingham, AL</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card">
+          <h3>Dr. Scott C. Albano, D.C.</h3>
+          <p>Board-Certified Chiropractic Orthopedist<br>Alabama Powerlifting Hall of Fame</p>
+          <div class="champion-badge">2004 ARNOLD CLASSIC WORLD CHAMPION</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Tailored Chiropractic Services</h2>
+        <p>Holistic care that addresses the root cause — not just the symptoms. Every plan is built around your body, lifestyle, and goals.</p>
+      </div>
+      <div class="services-grid">
+        <article class="service-card reveal">
+          <div class="service-icon">🏋️</div>
+          <h3>Sports & Athletics Chiropractic</h3>
+          <p>Personalized treatment to boost performance, speed recovery, and keep athletes at every level competing at their best.</p>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-icon">🤰</div>
+          <h3>Chiropractic During Pregnancy</h3>
+          <p>Gentle, tailored care that relieves discomfort and supports your body’s changes for a more comfortable pregnancy.</p>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-icon">🧒</div>
+          <h3>Pediatric Chiropractic</h3>
+          <p>Safe, gentle care that supports healthy growth and development from infancy through adolescence.</p>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-icon">🦴</div>
+          <h3>Injury Recovery & Rehab</h3>
+          <p>Customized protocols that promote healing, restore mobility, and help you return to the activities you love.</p>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-icon">📐</div>
+          <h3>Biomechanics Education</h3>
+          <p>Learn proper body mechanics and movement patterns that prevent future injuries and improve long-term function.</p>
+        </article>
+        <article class="service-card reveal">
+          <div class="service-icon">💪</div>
+          <h3>Physical Therapy Integration</h3>
+          <p>Therapeutic stretches, strengthening, and recovery techniques integrated into every treatment plan.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-content reveal">
+          <h2>Meet Dr. Scott C. Albano</h2>
+          <p>
+            A proud Birmingham native, Dr. Albano combines deep local roots with world-class expertise. He earned his Doctorate in Chiropractic Orthopedics from LIFE University and holds Board Certification.
+          </p>
+          <p>
+            As a published author and 2004 Arnold Classic World Champion Powerlifter (and Alabama Powerlifting Hall of Fame member), he brings rare insight into lifting mechanics, athletic performance, and the demands of real life.
+          </p>
+          <p>
+            At Magic City Chiropractic he delivers quality over quantity — taking the time to understand each patient, explain every step, and create a true plan for lasting wellness.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight">
+              <div class="highlight-icon">1</div>
+              <div>
+                <strong>Comprehensive Assessment</strong>
+                <p style="margin:0;font-size:0.95rem;color:var(--gray)">Detailed evaluation of your unique needs before any treatment begins.</p>
+              </div>
+            </div>
+            <div class="highlight">
+              <div class="highlight-icon">2</div>
+              <div>
+                <strong>Root-Cause Focus</strong>
+                <p style="margin:0;font-size:0.95rem;color:var(--gray)">We don’t just chase symptoms — we correct the underlying imbalances.</p>
+              </div>
+            </div>
+            <div class="highlight">
+              <div class="highlight-icon">3</div>
+              <div>
+                <strong>Education & Empowerment</strong>
+                <p style="margin:0;font-size:0.95rem;color:var(--gray)">You leave knowing why you’re in pain and exactly how to stay well.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-image reveal">
+          <!-- Replace this with a high-resolution photo of Dr. Albano -->
+          <div style="text-align:center;padding:2rem;">
+            <div style="font-size:4rem;margin-bottom:1rem;">👨‍⚕️</div>
+            <div style="font-weight:700;font-size:1.3rem;">Dr. Scott C. Albano, D.C.</div>
+            <div style="opacity:0.8;margin-top:0.5rem;">Board-Certified • World Champion</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL -->
+  <section class="testimonial">
+    <div class="container reveal">
+      <blockquote>
+        “Dr. Scott is amazing. He truly cares about his patients and goes above and beyond to not only get to know them, but create a thorough plan of care and explain everything thoroughly. I have been to my fair share of chiropractors throughout my life, and he takes the cake. Awesome and friendly staff, wonderful environment to step into. So thankful I found Magic City Chiro!!”
+      </blockquote>
+      <cite>— Joely Coker</cite>
+    </div>
+  </section>
+
+  <!-- CONTACT + FORMS -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h2>Get In Touch</h2>
+          <p>Experience tailored chiropractic care. We’re here to help you move better, feel stronger, and live with less pain.</p>
+          
+          <div class="contact-details">
+            <div class="contact-item">
+              <div>📍</div>
+              <div>
+                <strong>Location</strong>
+                1581 Montgomery Hwy, Suite 115<br>
+                Hoover, AL 35216
+              </div>
+            </div>
+            <div class="contact-item">
+              <div>📞</div>
+              <div>
+                <strong>Phone</strong>
+                <a href="tel:+12054444844">(205) 444-4844</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div>✉️</div>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:Magiccitychiro@gmail.com">Magiccitychiro@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div>🕐</div>
+              <div>
+                <strong>Hours</strong>
+                Available by Appointment Only
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:2.5rem;" id="forms">
+            <h3 style="margin-bottom:1rem;color:var(--black);">Patient Forms</h3>
+            <p style="color:var(--gray);margin-bottom:1rem;">New patients — please complete the intake form before your first visit.</p>
+            <a href="https://magiccitychiro.com/new-patient-intake-form" class="btn btn-primary" target="_blank" rel="noopener">New Patient Intake Form</a>
+            <p style="margin-top:1rem;font-size:0.9rem;color:var(--gray);">
+              Or schedule directly: <a href="https://magiccitychiro.com/schedule-appointment" style="color:var(--red);">Schedule Appointment Page</a>
+            </p>
+          </div>
+        </div>
+
+        <div class="contact-form-card reveal">
+          <h3>Request an Appointment</h3>
+          <p style="color:var(--gray);margin-bottom:1.5rem;font-size:0.95rem;">
+            Prefer to call? Dial <strong>(205) 444-4844</strong>. Otherwise leave your details and we’ll reach out.
+          </p>
+          <!-- Simple contact form — replace with Jotform embed when ready -->
+          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <div class="form-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" required placeholder="Jane Doe" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="you@example.com" />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="(205) 555-0123" />
+            </div>
+            <div class="form-group">
+              <label for="message">How can we help?</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us about your goals or concerns..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">
+              Submit Request
+            </button>
+          </form>
+          <p class="form-note">
+            This is a temporary form placeholder. Swap the form action or embed your existing Jotform here for production.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">Magic City <span>Chiro</span></a>
+        <p>Tailored chiropractic solutions for your unique needs. Holistic • Quality • Results.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#about">About Dr. Albano</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#forms">Patient Forms</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+12054444844">(205) 444-4844</a></li>
+          <li><a href="mailto:Magiccitychiro@gmail.com">Magiccitychiro@gmail.com</a></li>
+          <li>1581 Montgomery Hwy #115<br>Hoover, AL 35216</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Magic City Chiropractic. All rights reserved.</span>
+      <span style="color:var(--red-light);">#MAGICCITYSTRONG</span>
+    </div>
+  </footer>
+
+  <script>
+    // Reveal on scroll
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.15 });
+    reveals.forEach(el => observer.observe(el));
+
+    // Mobile nav toggle
+    document.querySelector('.mobile-toggle')?.addEventListener('click', () => {
+      const links = document.querySelector('.nav-links');
+      if (links.style.display === 'flex') {
+        links.style.display = 'none';
+      } else {
+        links.style.display = 'flex';
+        links.style.flexDirection = 'column';
+        links.style.position = 'absolute';
+        links.style.top = '100%';
+        links.style.right = '1rem';
+        links.style.background = 'var(--black)';
+        links.style.padding = '1.25rem';
+        links.style.borderRadius = '12px';
+        links.style.gap = '1rem';
+        links.style.minWidth = '200px';
+      }
+    });
+  </script>
+</body>
+</html>
